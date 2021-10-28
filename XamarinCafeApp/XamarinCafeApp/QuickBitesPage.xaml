@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCafeApp.QuickBitesPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Rectangle Background="#23272A" Grid.RowSpan="3" Grid.ColumnSpan="8"/>
+        <Rectangle Background="#23272A" Grid.Row="3" Grid.RowSpan="3" Grid.ColumnSpan="8"/>
+
+        <Label Grid.Column="3" 
+               Grid.ColumnSpan="5" 
+               Grid.Row="0" 
+               Grid.RowSpan="2" 
+               Text="Bagel &#10;$1.50" 
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" 
+               TextColor="White" 
+               FontSize="24"
+               Padding="12"/>
+        <Label Grid.Column="3" 
+               Grid.ColumnSpan="5" 
+               Grid.Row="1" 
+               Grid.RowSpan="1" 
+               Text="Freshly baked each morning" 
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" 
+               TextColor="#FFC620" 
+               FontSize="12"
+               Padding="12"/>
+        <Image Source="bagels.png" 
+               Grid.Column="0" 
+               Grid.Row="0" 
+               Grid.RowSpan="3" 
+               Grid.ColumnSpan="3"/>
+        <Label Grid.Column="3" 
+               Grid.ColumnSpan="5" 
+               Grid.Row="3" 
+               Grid.RowSpan="2" 
+               Text="Eggs Benedict &#10;$6.50" 
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" 
+               TextColor="White" 
+               FontSize="24"
+               Padding="12"/>
+        <Label Grid.Column="4" 
+               Grid.ColumnSpan="4" 
+               Grid.Row="4" 
+               Grid.RowSpan="2" 
+               Text="Poached eggs over bacon &#10;and buttered toasted English muffin, &#10;topped with Hollandaise sauce" 
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" 
+               TextColor="#FFC620" 
+               FontSize="12"
+               Padding="12"/>
+        <Image Source="eggbacon.png" 
+               Grid.Column="0" 
+               Grid.Row="3" 
+               Grid.RowSpan="3" 
+               Grid.ColumnSpan="3"/>
+    </Grid>
+</ContentPage>
